@@ -1,0 +1,19 @@
+package logbook;
+
+public enum EventType {
+    ROAD_ENTER("entered road"),
+    ROAD_EXIT("exited road"),
+    TRIP_START("started trip"),
+    TRIP_COMPLETE("completed trip");
+
+    private final String name;
+
+    EventType(String name) {
+        this.name = name;
+    }
+
+    @Override
+    public String toString() {
+        return this.name;
+    }
+}
